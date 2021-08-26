@@ -131,3 +131,16 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme());
     localStorage.setItem('selected-icon', getCurrentIcon());
 });
+
+let saids = [
+    'Hãy cảm ơn những lúc bạn gặp khó khăn, bởi nếu không có khó khăn, bạn sẽ không có cơ hội để hiểu mình và trải nghiệm cuộc sống.',
+    'Hạnh phúc lớn nhất đơn giản chỉ là thời khắc hiện tại bạn thực sự hài lòng với chính những gì bạn có.',
+    'Mạnh mẽ là tốt nhưng không từ bỏ thì tốt hơn và nếu mạnh mẽ cộng không dễ dàng từ bỏ thì tuyệt vời.',
+    'Hãy giữ khuôn mặt bạn luôn hướng về ánh mặt trời, và bóng tối sẽ ngả phía sau bạn.',
+    'Bạn sẽ tìm thấy niềm vui khi giúp đỡ người khác bằng tất cả tấm lòng.',
+];
+
+setInterval(()=>{
+    let ranIndex = Math.floor(Math.random() * saids.length);
+    document.getElementById("said").innerHTML = saids[ranIndex];
+}, 1000 * 15);
