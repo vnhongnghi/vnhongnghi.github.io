@@ -15,6 +15,7 @@ var snowflakes = [];
 var browserWidth;
 var browserHeight;
 var numberOfSnowflakes = 50;
+var fontSize = 22;
 var resetPosition = false;
 function setup() {
     window.addEventListener('DOMContentLoaded', generateSnowflakes, false);
@@ -38,7 +39,7 @@ function Snowflake(b, a, d, e, c) {
     this.counter = 0;
     this.sign = Math.random() < 0.5 ? 1 : -1;
     this.element.style.opacity = 0.5 + Math.random();
-    this.element.style.fontSize = 4 + Math.random() * 22 + 'px';
+    this.element.style.fontSize = 4 + Math.random() * fontSize + 'px';
 }
 Snowflake.prototype.update = function () {
     this.counter += this.speed / 5000;
@@ -110,5 +111,5 @@ function setResetFlag(a) {
         numberOfSnowflakes=50
 
     Thay đổi kích thước:
-        30 + "px"
+        fontSize=22
 */

@@ -268,6 +268,27 @@ a {
   font-weight: var(--font-medium);
 }
 
+/* hoand custom style background Merry Christmas */
+body {
+    background: url('../img/merry_christmas_1.png');
+}
+
+.clock .clock__circle {
+    background: white;
+}
+
+.dark-theme .clock__circle {
+    background: black;
+}
+
+.clock__text-hour, .clock__text-minutes, .clock__text-ampm, .clock__date{
+    color: #FFF;
+}
+
+#said, .clock__logo{
+    color: #d7e5e5;
+}
+
 /*=============== MEDIA QUERIES ===============*/
 /* For large devices */
 @media screen and (min-width: 968px) {
