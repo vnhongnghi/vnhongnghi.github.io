@@ -147,18 +147,21 @@ setInterval(()=>{
 }, 1000 * 15);
 
 let images = [
-    './public/assets/img/merry_christmas_1.png',
-    './public/assets/img/merry_christmas_2.png',
-    './public/assets/img/merry_christmas_3.png',
-    './public/assets/img/merry_christmas_4.png',
-    './public/assets/img/merry_christmas_5.png',
-    './public/assets/img/merry_christmas_6.png',
+    // './public/assets/img/merry_christmas_1.png',
+    // './public/assets/img/merry_christmas_2.png',
+    // './public/assets/img/merry_christmas_3.png',
+    // './public/assets/img/merry_christmas_4.png',
+    // './public/assets/img/merry_christmas_5.png',
+    // './public/assets/img/merry_christmas_6.png',
+
+    './public/assets/img/happy_new_year_2022.png'
 ];
 
 function randomImg(){
     let ranIndex = Math.floor(Math.random() * images.length); // start 0
     let imgUrl = `url('${images[ranIndex]}')`;
     document.body.style.background = imgUrl;
+    document.body.style.backgroundSize = '100vw';
 }
 
 /* random background after 10s */
