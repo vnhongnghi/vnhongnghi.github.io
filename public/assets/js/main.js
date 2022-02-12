@@ -147,6 +147,8 @@ setInterval(()=>{
 }, 1000 * 15);
 
 let images = [
+    './public/assets/img/background_1.png',
+
     // './public/assets/img/merry_christmas_1.png',
     // './public/assets/img/merry_christmas_2.png',
     // './public/assets/img/merry_christmas_3.png',
@@ -154,7 +156,7 @@ let images = [
     // './public/assets/img/merry_christmas_5.png',
     // './public/assets/img/merry_christmas_6.png',
 
-    './public/assets/img/happy_new_year_2022.png'
+    // './public/assets/img/happy_new_year_2022.png'
 ];
 
 function randomImg(){
