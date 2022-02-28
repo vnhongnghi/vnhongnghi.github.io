@@ -269,6 +269,7 @@ a {
 }
 
 /* hoand custom style background Merry Christmas */
+/* bỏ background thì cmt đoạn này */
 body {
     background: url('../img/merry_christmas_1.png');
 }
@@ -288,6 +289,7 @@ body {
 #said, .clock__logo{
     color: #d7e5e5;
 }
+/* bỏ background thì cmt đoạn này */
 
 /*=============== MEDIA QUERIES ===============*/
 /* For large devices */

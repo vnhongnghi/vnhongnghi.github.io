@@ -147,7 +147,7 @@ setInterval(()=>{
 }, 1000 * 15);
 
 let images = [
-    './public/assets/img/background_1.png',
+    './public/assets/img/background_1.jpg',
 
     // './public/assets/img/merry_christmas_1.png',
     // './public/assets/img/merry_christmas_2.png',
@@ -159,11 +159,12 @@ let images = [
     // './public/assets/img/happy_new_year_2022.png'
 ];
 
+// bỏ background thì cmt đoạn này
 function randomImg(){
     let ranIndex = Math.floor(Math.random() * images.length); // start 0
     let imgUrl = `url('${images[ranIndex]}')`;
     document.body.style.background = imgUrl;
-    document.body.style.backgroundSize = '100vw';
+    //document.body.style.backgroundSize = '100vw';
 }
 
 /* random background after 10s */
@@ -172,3 +173,4 @@ setInterval(()=>{
 }, 1000 * 60 * 5);
 
 randomImg();
+// bỏ background thì cmt đoạn này
