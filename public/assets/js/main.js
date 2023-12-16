@@ -147,14 +147,14 @@ setInterval(()=>{
 }, 1000 * 15);
 
 let images = [
-    './public/assets/img/background_1.jpg',
+    // './public/assets/img/background_1.jpg',
 
-    // './public/assets/img/merry_christmas_1.png',
-    // './public/assets/img/merry_christmas_2.png',
-    // './public/assets/img/merry_christmas_3.png',
-    // './public/assets/img/merry_christmas_4.png',
-    // './public/assets/img/merry_christmas_5.png',
-    // './public/assets/img/merry_christmas_6.png',
+    './public/assets/img/merry_christmas_1.png',
+    './public/assets/img/merry_christmas_2.png',
+    './public/assets/img/merry_christmas_3.png',
+    './public/assets/img/merry_christmas_4.png',
+    './public/assets/img/merry_christmas_5.png',
+    './public/assets/img/merry_christmas_6.png',
 
     // './public/assets/img/happy_new_year_2022.png'
 ];
@@ -170,7 +170,6 @@ function randomImg(){
 /* random background after 10s */
 setInterval(()=>{
     randomImg();
-}, 1000 * 60 * 5);
+}, 1000 * 15);
 
 randomImg();
-// bỏ background thì cmt đoạn này
