@@ -156,7 +156,7 @@ let images = [
     './public/assets/img/merry_christmas_5.png',
     './public/assets/img/merry_christmas_6.png',
 
-    // './public/assets/img/happy_new_year_2022.png'
+    // './public/assets/img/happy_new_year.png'
 ];
 
 // bỏ background thì cmt đoạn này

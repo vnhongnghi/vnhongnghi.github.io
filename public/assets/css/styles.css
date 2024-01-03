@@ -97,7 +97,7 @@ a {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 968px;
+  /* max-width: 968px; */
   margin-left: var(--mb-1);
   margin-right: var(--mb-1);
 }
@@ -270,10 +270,6 @@ a {
 
 /* hoand custom style background Merry Christmas */
 /* bỏ background thì cmt đoạn này */
-body {
-    background: url('../img/merry_christmas_1.png');
-}
-
 .clock .clock__circle {
     background: white;
 }
@@ -307,4 +303,9 @@ p.notify {
     text-align: center;
     max-width: 680px;
     margin: 0px auto;
+    font-family: cursive;
+}
+
+.clock__logo, p.notify {
+    font-family: cursive;
 }
