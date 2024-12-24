@@ -340,7 +340,7 @@ a.fiverr-ad {
 }
 
 /* hoandev */
-#test{
+#test {
     position: absolute;
     top: 0;
     left: 0;
@@ -351,13 +351,13 @@ a.fiverr-ad {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 10px;
 }
 
-img{
-    
-    height: 95%;
-    opacity: 0.88;
+img {
+    width: 100vw;
+    height: auto; /* Giữ tỉ lệ hình ảnh */
+    object-fit: cover; /* Cắt hình ảnh nếu cần */
+    opacity: 0.8;
 }
 
 [hidden] {

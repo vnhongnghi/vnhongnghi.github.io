@@ -91,6 +91,14 @@ body {
   color: var(--text-color);
 }
 
+body {
+    /* Cấu hình hiệu ứng mượt cho background */
+    transition: background-image 1.5s ease-in-out; /* 1.5s là thời gian chuyển đổi */
+    background-size: cover; /* Đảm bảo hình ảnh lấp đầy màn hình */
+    background-position: center; /* Căn giữa hình nền */
+    background-repeat: no-repeat; /* Không lặp hình nền */
+}
+
 a {
   text-decoration: none;
 }
