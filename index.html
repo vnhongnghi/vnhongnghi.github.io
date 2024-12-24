@@ -47,11 +47,32 @@
             rel="stylesheet"
             href="./public/assets/css/happy_new_year.css"
         />
+
+        <style>
+            p.notify {
+                position: fixed; /* Cố định vị trí so với viewport */
+                bottom: 50px; /* Đẩy phần tử lên, cách đáy 80px để chừa chỗ cho .clock__logo */
+                left: 50%; /* Đặt giữa màn hình theo chiều ngang */
+                transform: translateX(-50%); /* Căn giữa chính xác */
+                text-align: center;
+                max-width: 680px;
+                margin: 0px auto;
+                font-family: cursive;
+                background-color: rgba(0, 0, 0, 0.7); /* Tuỳ chọn: Thêm nền mờ */
+                color: white; /* Tuỳ chọn: Màu chữ */
+                padding: 10px; /* Tuỳ chọn: Thêm khoảng cách trong */
+                border-radius: 5px; /* Tuỳ chọn: Bo góc */
+            }         
+        </style>
     </head>
     <body>
 
         <div id="test">
             <img src="./public/assets/img/z6159905744495_f177a87a2eb811d3441492b5943a5af2.jpg" alt="Hồng Nghi Team Building">
+
+            <p id="said" class="notify">
+                Hạnh phúc lớn nhất đơn giản chỉ là thời khắc hiện tại bạn thực sự hài lòng với chính những gì bạn có!
+            </p>
         </div>
         <!-- SVG Spritesheet -->
         <div
@@ -222,4 +243,24 @@
         </div>
     </body>
     <script src="./public/assets/js/happy_new_year.js"></script>
+    <script>
+        let saids = [
+            'Hãy cảm ơn những lúc bạn gặp khó khăn, bởi nếu không có khó khăn, bạn sẽ không có cơ hội để hiểu mình và trải nghiệm cuộc sống.',
+            'Hạnh phúc lớn nhất đơn giản chỉ là thời khắc hiện tại bạn thực sự hài lòng với chính những gì bạn có.',
+            'Mạnh mẽ là tốt nhưng không từ bỏ thì tốt hơn và nếu mạnh mẽ cộng không dễ dàng từ bỏ thì tuyệt vời.',
+            'Hãy giữ khuôn mặt bạn luôn hướng về ánh mặt trời, và bóng tối sẽ ngả phía sau bạn.',
+            'Bạn sẽ tìm thấy niềm vui khi giúp đỡ người khác bằng tất cả tấm lòng.',
+        ];
+
+        function randomSaid(){
+            let ranIndex = Math.floor(Math.random() * saids.length);  // start 0
+            document.getElementById("said").innerHTML = saids[ranIndex];
+        }
+
+        /* random said after 15s */
+        setInterval(() => {
+            randomSaid();
+        }, 1000 * 15);
+        randomSaid();
+    </script>
 </html>
